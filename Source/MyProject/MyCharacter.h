@@ -33,6 +33,7 @@ public:
 	FORCEINLINE TArray<class AItemCh*>GetInventori() const { return Inventori; }
 
 	void OnDeath();
+	void ChaveUsada();
 
 	
 	

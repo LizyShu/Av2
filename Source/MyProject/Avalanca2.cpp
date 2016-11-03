@@ -5,6 +5,7 @@
 #include "Porta2.h"
 
 
+
 // Sets default values
 AAvalanca2::AAvalanca2()
 {
@@ -51,6 +52,8 @@ void AAvalanca2::OnPressed() {
 
 	if (Portas.Num() > 0) {
 		APorta2* Porta = Cast<APorta2>(Portas[0]);
+
+
 
 		if (Porta->IsOpen()) {
 			Porta->SetOpen(false);

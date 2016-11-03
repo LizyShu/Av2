@@ -6,6 +6,7 @@
 
 
 
+
 // Sets default values
 AAvalanca::AAvalanca()
 {
@@ -44,10 +45,14 @@ void AAvalanca::Tick( float DeltaTime )
 
 }
 
+
+
 void AAvalanca::OnPressed() {
 	TArray<AActor*> Portas;
 	UGameplayStatics::GetAllActorsOfClass(GetWorld(), APorta::StaticClass(), Portas);
 	UMaterial* Material;
+
+	
 
 	if (Portas.Num() > 0) {
 		APorta* Porta = Cast<APorta>(Portas[0]);
@@ -72,4 +77,5 @@ void AAvalanca::OnPressed() {
 		}
 	}
 }
+
 
